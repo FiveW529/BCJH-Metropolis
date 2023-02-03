@@ -24,7 +24,7 @@
 
 void toolEquipped(Chef *chef) {
 
-    return; // 以下为示例代码，可自行修改。完成后注释此行。
+//    return; // 以下为示例代码，可自行修改。完成后注释此行。
 
     auto skill = chef->skill; // 这句不用管，放着就好。
 
@@ -33,15 +33,15 @@ void toolEquipped(Chef *chef) {
         skill.abilityBuff.cut += 20; // 蔬菜售价+15%
         chef->tool = NO_TOOL;               // 不允许装备其他厨具
     }
-    if (chef->name == "宋书汐汐") {   // 幸福礼花炮
-        skill.ability.stirfry += 150; // 炒技法+150
-        skill.abilityBuff.bake += 25; // 烤售价+25%
-        chef->tool = NO_TOOL;         // 不允许装备其他厨具
-    }
-    if (chef->name == "柔可") {
-        skill.abilityBuff.knife += 20;
-        skill.materialBuff.creation += 15;
-        chef->tool = NO_TOOL;
-    }
+//     if (chef->name == "宋书汐汐") {   // 幸福礼花炮
+//         skill.ability.stirfry += 150; // 炒技法+150
+//         skill.abilityBuff.bake += 25; // 烤售价+25%
+//         chef->tool = NO_TOOL;         // 不允许装备其他厨具
+//     }
+//     if (chef->name == "柔可") {
+//         skill.abilityBuff.knife += 20;
+//         skill.materialBuff.creation += 15;
+//         chef->tool = NO_TOOL;
+//     }
 }
 #endif
