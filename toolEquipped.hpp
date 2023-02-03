@@ -28,9 +28,9 @@ void toolEquipped(Chef *chef) {
 
     auto skill = chef->skill; // 这句不用管，放着就好。
 
-    if (chef->name == "达浪") {             // 金锄头
-        skill.ability.add(30);              // 全技法+30
-        skill.materialBuff.vegetable += 15; // 蔬菜售价+15%
+    if (chef->name == "无限师父") {             // 金锄头
+        skill.ability.bake += 150;              // 全技法+30
+        skill.abilityBuff.cut += 20; // 蔬菜售价+15%
         chef->tool = NO_TOOL;               // 不允许装备其他厨具
     }
     if (chef->name == "宋书汐汐") {   // 幸福礼花炮
