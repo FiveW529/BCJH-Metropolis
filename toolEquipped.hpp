@@ -24,7 +24,7 @@
 
 void toolEquipped(Chef *chef) {
 
-//    return; // 以下为示例代码，可自行修改。完成后注释此行。
+   return; // 以下为示例代码，可自行修改。完成后注释此行。
 
     auto skill = chef->skill; // 这句不用管，放着就好。
 
